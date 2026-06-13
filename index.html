@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ApexPlanet Task 1</title>
+    <title>Task 2 Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome To My Website</h1>
+<header>
+    <h1>Student Productivity Dashboard</h1>
+</header>
 
-    <p>
-        Hello! My name is Saloni.
-        This webpage was created for ApexPlanet Internship Task 1.
-    </p>
+<div class="container">
 
-    <img src="https://picsum.photos/300/200" alt="Random Image">
+    <section class="contact">
 
-    <br><br>
+        <h2>Contact Form</h2>
 
-    <a href="https://github.com" target="_blank">
-        Visit GitHub
-    </a>
+        <form id="contactForm">
 
-    <br><br>
+            <input type="text"
+                   id="name"
+                   placeholder="Enter Name">
 
-    <button onclick="showMessage()">
-        Click Me
-    </button>
+            <input type="email"
+                   id="email"
+                   placeholder="Enter Email">
 
-    <script src="script.js"></script>
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+    <section class="todo">
+
+        <h2>To-Do List</h2>
+
+        <input type="text"
+               id="taskInput"
+               placeholder="Add Task">
+
+        <button onclick="addTask()">
+            Add
+        </button>
+
+        <ul id="taskList"></ul>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
